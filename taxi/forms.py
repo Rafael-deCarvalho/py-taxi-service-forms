@@ -5,9 +5,9 @@ from taxi.models import Car
 
 class CarForm(forms.ModelForm):
     drivers = forms.ModelMultipleChoiceField(
-          queryset=get_user_model().objects.all(),
-          widget=forms.CheckboxSelectMultiple,
-          required=False,
+        queryset=get_user_model().objects.all(),
+        widget=forms.CheckboxSelectMultiple,
+        required=False,
     )
 
     class Meta:
